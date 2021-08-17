@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Boldbold';
+}
+
+@font-face {
+    font-family: 'Boldbold';
+    src: url(fonts/B612-Bold.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header .div-header {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Boldbold';
+}
+
+
+#header .div-header h1 {
+    margin-top: 50px;
+    font-size: 90px;
+}
+
+
+#container {
+   position: absolute;
+   left: 170px;
+   margin-top: 60px;
+}
+
+#container .div-conteudo {
+    color: white;
+    display: flex;
+    font-size: 10px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+#container .div-conteudo h2 {
+    margin-left: 50px;
+    font-family: 'arial';
+    font-weight: 100;
+}
+
+#container .div-conteudo img {
+    border-radius: 9px;
+}
+
+#container .div-outros {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: relative;
+    bottom: 130px;
+    margin-left: 220px;
+    color: white;
+    font-family: 'Boldr';
+}
+
+.filter-white{
+    filter: invert(48%) sepia(100%) saturate(0%) hue-rotate(2deg) brightness(200%) contrast(200%);
+}
+
+#container .div-button .btn-assistir {
+    background: rgb(47, 130, 255);
+    border: none;
+    padding: 15px 29px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#container .div-button .btn-trailer {
+    background: rgb(26, 27, 27);
+    border: 2px solid white;
+    padding: 13px 29px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+#container .div-button{
+    margin-left: 249px;
+    position: relative;
+    bottom: 113px;
+    font-family: 'Boldr';
+    
+}
+
+
+
+@media (max-width:425px) {
+
+    body {
+        height: 116vh;
+        width: 100vw;
+    }
+
+    #container {
+        position: absolute;
+        left: 0;
+        text-align: center;
+    }
+
+    #container .div-conteudo img {
+        display: none;
+    }
+
+    .filter-white {
+        display: none;
+    }
+
+    #container .div-outros p {
+        display: none;
+    }
+
+    #container .div-outros img {
+        position: absolute;
+        top: 120px;
+        margin-right: 225px;
+    }
+
+    #container .div-conteudo {
+        position: relative;
+        right: 40px;
+    }
+
+    #container .div-button .btn-trailer {
+        position: absolute;
+        left: -213px;
+        top:226px;
+        font-size: 12px;
+        width:200px;
+    }
+
+    #container .div-button .btn-assistir {
+        position: absolute;
+        left: -190px;
+        top: 170px;
+        font-size: 12px;
+        width: 300%;
+    }
+
+}
+
