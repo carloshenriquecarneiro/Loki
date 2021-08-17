@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fundo.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
